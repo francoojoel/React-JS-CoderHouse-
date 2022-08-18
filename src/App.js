@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Desafio 1, crear el CLI
         </a>
       </header>
     </div>
