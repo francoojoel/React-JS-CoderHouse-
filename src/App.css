@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
@@ -24,7 +24,8 @@
   color: white;
 }
 
-.App-link {
+.App-name {
+  font-size: 32px;
   color: #61dafb;
 }
 
