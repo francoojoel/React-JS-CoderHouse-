@@ -1,4 +1,6 @@
 import React from "react"
+import { ItemListContainer } from "../containers/ItemListContainer";
+import CartWidget from "./CartWidget";
 
 const Header = () => {
    return (
@@ -12,6 +14,12 @@ const Header = () => {
                <li>About Us</li>
             </ul>
          </nav>
+         <div className="Cart-container">
+            <CartWidget />
+            <div className="Greeting-info">
+               <ItemListContainer greeting="0"/>
+            </div> 
+         </div>
       </div>
    )
 }
