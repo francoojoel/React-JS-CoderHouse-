@@ -12,12 +12,12 @@
 
 .Header-container {
     width: 100%;
-    height: 90px;
-    background-color: #232323;  
+    height: 80px;
+    background-color: #232323;
 }
 
 .Header-container .Navbar{
-    padding: 1.5rem 0rem;
+    padding-top: 1rem;
 }
 
 .Header-container .Navbar .Logo em {
@@ -28,18 +28,17 @@
 .Header-container .Navbar .Logo {
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 800;
     cursor: pointer;
     float: left;
-    padding-left: 9rem;
+    padding-left: 4rem;
 }
 
 .Navbar .Nav-list{
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding-left: 6rem;
 }
 
 .Navbar .Nav-list li {
@@ -70,4 +69,53 @@
 .Navbar .Underline-hover li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.Cart-container{
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 1.7rem;
+    margin: -38px;
+    padding-right: 6rem;
+    cursor: pointer;
+}
+
+.Greeting-info {
+    margin: 0px 7px 10px;
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+    background-color: #f33f3f;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.News-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.News-container img {
+    width: 100%;
+    height: auto;
+}
+
+.News-container .Centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Centered-title .Sub-title {
+    color: #f33f3f;
+    font-size: 3rem;
+}
+
+.Centered-title .Main-title {
+    color: #fff;
+    font-size: 5rem;
 }
