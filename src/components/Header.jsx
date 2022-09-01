@@ -6,7 +6,7 @@ const Header = () => {
    return (
       <div className="Header-container">
          <nav className="Navbar">
-            <h2 className="Logo"><em>Levi</em> Clothing</h2>
+            <h2 className="Logo"><em>Levi</em> Footwear</h2>
             <ul className="Nav-list Underline-hover">
                <li>Home</li>
                <li>Products</li>
