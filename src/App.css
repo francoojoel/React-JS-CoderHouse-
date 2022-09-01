@@ -84,8 +84,8 @@
 .Greeting-info {
     margin: 0px 7px 10px;
     padding: 3px;
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     background-color: #f33f3f;
     border-radius: 50%;
     text-align: center;
@@ -93,6 +93,7 @@
 }
 
 .News-container {
+    width: 100%;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -112,10 +113,41 @@
 
 .Centered-title .Sub-title {
     color: #f33f3f;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .Centered-title .Main-title {
     color: #fff;
-    font-size: 5rem;
+    font-size: 4rem;
+}
+
+.App-container .Count-container {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-container .Count-container .Counter-button {
+    border: none;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+}
+
+.App-container .Count-container .Add-cart-container {
+    margin-left: 2rem;
+}
+
+.App-container .Count-container .Add-cart-container .Cart-button {
+    border: none;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.App-container .Count-container .Counter {
+    margin: 1rem;
 }
