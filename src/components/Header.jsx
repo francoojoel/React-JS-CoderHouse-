@@ -1,6 +1,6 @@
 import React from "react"
-import { ItemListContainer } from "../containers/ItemListContainer";
 import CartWidget from "./CartWidget";
+{/*import { ItemListContainer } from "../containers/ItemListContainer";*/}
 
 const Header = () => {
    return (
@@ -16,9 +16,9 @@ const Header = () => {
          </nav>
          <div className="Cart-container">
             <CartWidget />
-            <div className="Greeting-info">
+            {/*<div className="Greeting-info">
                <ItemListContainer greeting="0"/>
-            </div> 
+            </div>*/}
          </div>
       </div>
    )

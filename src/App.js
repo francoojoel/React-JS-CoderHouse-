@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import News from './components/News';
 import ItemCount from './components/ItemCount';
+import ItemListContainer from './containers/ItemListContainer';
 
 function App () {
    return (
@@ -10,6 +11,7 @@ function App () {
          <Header />
          <News />
          <ItemCount initial={0} stock={10} />
+         <ItemListContainer />
       </div>
    );
 }

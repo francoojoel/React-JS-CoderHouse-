@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .App-container {
@@ -101,7 +102,7 @@
 
 .News-container img {
     width: 100%;
-    height: auto;
+    max-height: auto;
 }
 
 .News-container .Centered-title {
@@ -150,4 +151,46 @@
 
 .App-container .Count-container .Counter {
     margin: 1rem;
+}
+
+.App-container .Item-container {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.App-container .Items-title {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.App-container .Item-container .Product-card {
+    margin: 1rem;
+    width: 275px;
+    height: 370px;
+    min-height: auto;
+    min-width: auto;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.App-container .Item-container .Product-card:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.App-container .Item-container .Product-card img {
+    width: 100%;
+    max-height: auto;
+}
+
+.App-container .Item-container .Product-card .Item-name {
+    padding-left: 1rem;
+    font-weight: 300;
+}
+
+.App-container .Item-container .Product-card .Item-price {
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
