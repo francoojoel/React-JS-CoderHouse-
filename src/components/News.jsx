@@ -1,5 +1,5 @@
-import React from 'react'
-import arrivals from '../assets/arrivals.jpg'
+import React from 'react';
+import arrivals from '../assets/arrivals.jpg';
 
 const News = () => {
   return (
@@ -13,4 +13,4 @@ const News = () => {
   )
 }
 
-export default News
+export default News;
