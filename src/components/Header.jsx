@@ -1,6 +1,6 @@
 import React from "react"
 import CartWidget from "./CartWidget";
-{/*import { ItemListContainer } from "../containers/ItemListContainer";*/}
+//import { ItemListContainer } from "../containers/ItemListContainer";
 
 const Header = () => {
    return (
