@@ -14,6 +14,14 @@ const footwear = [
    title: "Nike Airforce One Shadow", price: 290},
    {id: 6, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dwec28aab0/products/AD_GZ8213/AD_GZ8213-1.JPG?sw=400&sh=400", 
    title: "Adidas Lite Racer ByD 2.0", price: 170},
+   {id: 7, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dwce2b59db/products/NI_553558-163/NI_553558-163-1.JPG?sw=400&sh=400",
+   title: "Nike Air Jordan One Low", price: 280},
+   {id: 8, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw3fe30941/products/NI_DH3162-001/NI_DH3162-001-1.JPG?sw=400&sh=400",
+   title: "Nike Court Legacy", price: 180},
+   {id: 9, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dwd56f2c22/products/NI_DH3162-100/NI_DH3162-100-1.JPG?sw=400&sh=400", 
+   title: "Nike Court Legacy", price: 180},
+   {id: 10, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw6122f4c6/products/AD_GZ3529/AD_GZ3529-1.JPG?sw=400&sh=400", 
+   title: "Adidas Multix", price: 195},  
 ]
 
 export const ItemListContainer = () => {
@@ -23,7 +31,7 @@ export const ItemListContainer = () => {
      const getData = new Promise(resolve => {
       setTimeout(() => {
          resolve(footwear);
-      }, 3000);
+      }, 2000);
      });
      getData.then(res => setData(res));
    }, [])                  
