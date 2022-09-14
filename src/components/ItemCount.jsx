@@ -12,7 +12,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
         <h3 className='Counter'>{count}</h3>
         <button className='Counter-button' disabled={count <= initial} onClick={restar}>-</button>
         <div className='Add-cart-container'>
-            <button className='Cart-button' disabled={count <= 0} onClick={onAdd}>Agregar al carrito</button>
+            <button className='Cart-button' disabled={count <= 0} onClick={onAdd}>Add to cart</button>
         </div>
     </div>
   )
