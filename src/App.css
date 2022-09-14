@@ -44,9 +44,13 @@
 .Navbar .Nav-list li {
     letter-spacing: 0.5px;
     margin: 1rem 1.5rem;
-    cursor: pointer;
+}
+
+.Navbar .Nav-list li .Header-link {
+    text-decoration: none;
     color: #fff;
 }
+
 
 .Navbar .Underline-hover li {
     display: inline-block;
@@ -62,13 +66,13 @@
     bottom: 0;
     left: 0;
     background-color: #f33f3f; 
-    transform-origin: bottom right;
+    transform-origin: center;
     transition: transform 0.25s ease-out;
 }
 
 .Navbar .Underline-hover li:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    transform-origin: center;
 }
 
 .Cart-container{
@@ -122,51 +126,56 @@
 }
 
 .App-container .Count-container {
-    height: 300px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0.7rem;
+    padding-left: 1rem;
 }
 
 .App-container .Count-container .Counter-button {
     border: none;
+    border-radius: 16px;
     background-color: #f33f3f;
     color: #fff;
     font-size: 1rem;
-    padding: 0.3rem 1rem;
+    padding: 0.2rem 0.3rem;
+    cursor: pointer;
 }
 
 .App-container .Count-container .Add-cart-container {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .App-container .Count-container .Add-cart-container .Cart-button {
     border: none;
+    border-radius: 16px;
     background-color: #f33f3f;
     color: #fff;
     font-size: 1rem;
-    padding: 1rem 2rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
 }
 
 .App-container .Count-container .Counter {
-    margin: 1rem;
+    margin: 0.3rem;
+    font-size: 1rem;
 }
 
 .App-container .Item-container {
     display: inline-flex;
-	justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .App-container .Items-title {
     font-size: 2.5rem;
     margin: 1rem;
+    padding-top: 3rem;
 }
 
 .App-container .Item-container .Product-card {
     margin: 1rem;
     width: 275px;
-    height: 410px;
+    height: 400px;
     min-height: auto;
     min-width: auto;
     cursor: pointer;
@@ -185,13 +194,14 @@
 .App-container .Item-container .Product-card .Item-name {
     padding-left: 1rem;
     padding-top: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
 .App-container .Item-container .Product-card .Item-price {
     padding-left: 1rem;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .App-container .Item-container .Product-card .Item-description {
