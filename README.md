@@ -1,3 +1,10 @@
+# Explicacion de mi app
+Mi proyecto es un e-commerce simple y minimalista. Con 4 paginas navegables.
+En el home tengo el catalogo de productos con su card y sus detalles correspondientes, al dar clic en cualquier card,
+te lleva a los detalles del productos con la opcion de anadir al carrito con el counter.
+Voy a agregar un catalogo de productos mas amplio a la pagina de "Our Products".
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
