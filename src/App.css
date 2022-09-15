@@ -51,6 +51,10 @@
     color: #fff;
 }
 
+.Header-container .Cart-container .Cart-link {
+    text-decoration: none;
+    color: #fff;
+}
 
 .Navbar .Underline-hover li {
     display: inline-block;
@@ -78,7 +82,6 @@
 .Cart-container{
     display: flex;
     justify-content: flex-end;
-    color: #fff;
     font-size: 1.7rem;
     margin: -38px;
     padding-right: 6rem;
@@ -164,6 +167,7 @@
 .App-container .Item-container {
     display: inline-flex;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .App-container .Items-title {
@@ -175,11 +179,12 @@
 .App-container .Item-container .Product-card {
     margin: 1rem;
     width: 275px;
-    height: 400px;
+    height: 450px;
     min-height: auto;
     min-width: auto;
     cursor: pointer;
     transition: all 500ms ease;
+    flex: 1 16%;
 }
 
 .App-container .Item-container .Product-card:hover {
@@ -191,11 +196,18 @@
     max-height: auto;
 }
 
+
+.App-container .Item-container .Product-card .Item-link {
+    text-decoration: none;
+    color: #000;
+}
+
 .App-container .Item-container .Product-card .Item-name {
     padding-left: 1rem;
     padding-top: 1rem;
     font-size: 1.1rem;
     font-weight: 300;
+
 }
 
 .App-container .Item-container .Product-card .Item-price {
@@ -206,4 +218,22 @@
 
 .App-container .Item-container .Product-card .Item-description {
     padding-left: 10px;
+}
+
+.filters .Filters-title {
+    margin-left: 1rem;
+}
+
+.filters .Brand-filter {
+    display: flex;
+    margin: 0.8rem;
+    width: 20px;
+    height: 25px;
+    text-decoration: none;
+    color: #000;
+    transition: all 100ms ease-out;
+}
+
+.filters .Brand-filter:hover {
+    color: #f33f3f;
 }

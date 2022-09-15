@@ -1,10 +1,10 @@
 import React from 'react';
-import arrivals from '../assets/arrivals.jpg';
+import news from '../assets/news.jpg';
 
 const News = () => {
   return (
     <div className='News-container'>
-        <img src={arrivals} alt="New Arrivals" />
+        <img src={news} alt="New Arrivals" />
         <div className='Centered-title'>
             <h3 className='Sub-title'>Best Offer</h3>
             <h1 className='Main-title'>New Arrivals</h1>

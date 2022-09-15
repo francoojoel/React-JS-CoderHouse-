@@ -28,7 +28,7 @@ const footwear = [
 
 export const ItemListContainer = () => {
    const [data, setData] = useState([]);
-   const { categoriaId } = useParams();
+   const { categoryId } = useParams();
 
    useEffect(() => {
      const getData = new Promise(resolve => {
@@ -36,13 +36,12 @@ export const ItemListContainer = () => {
          resolve(footwear);
       }, 2000);
      });
-     if(footwear) {
-         getData.then(res => setData(res.filter(footwear => footwear.category === categoriaId)));
-         console.log(footwear);
+     if(categoryId) {
+         getData.then(res => setData(res.filter(footwear => footwear.category === categoryId)));
      }else {
          getData.then(res => setData(res));
      }
-   }, [categoriaId])                  
+   }, [categoryId])                  
    
    
   return (
