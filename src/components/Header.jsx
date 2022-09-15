@@ -1,5 +1,5 @@
 import React from "react"
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
 //import { ItemListContainer } from "../containers/ItemListContainer";
 
@@ -26,7 +26,9 @@ const Header = () => {
             </ul>
          </nav>
          <div className="Cart-container">
-            <CartWidget />
+           <Link className="Cart-link" to='/cart'>
+               <CartWidget />
+           </Link> 
             {/*<div className="Greeting-info">
                <ItemListContainer greeting="0"/>
             </div>*/}
