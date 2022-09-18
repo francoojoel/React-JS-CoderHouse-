@@ -220,6 +220,23 @@
     padding-left: 10px;
 }
 
+.Item-container .Product-card .Checkout-link {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem 0.8rem;
+    text-decoration: none;
+}
+
+.Item-container .Product-card .Checkout-button {
+    border: none;
+    border-radius: 16px;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}    
+
 .filters .Filters-title {
     margin-left: 1rem;
 }
