@@ -9,23 +9,26 @@ import About from './components/About';
 import Products from './components/Products';
 import Home from './components/Home';
 import Cart from './components/Cart'
+import CartProvider from './context/CartProvider';
 //import ItemCount from './components/ItemCount';
 
 function App () {
    return (
-      <div className='App-container'>    
-         <Header />
-         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
-            <Route path='/products' element={<Products />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/cart' element={<Cart />} />
-         </Routes>
-      {/*<ItemCount initial={0} stock={15} />*/}
-      </div> 
+      <CartProvider>
+         <div className='App-container'>    
+            <Header />
+            <Routes>
+               <Route path='*' element={<Home />} />
+               <Route path='/category/:categoryId' element={<ItemListContainer />} />
+               <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
+               <Route path='/products' element={<Products />} />
+               <Route path='/contact' element={<Contact />} />
+               <Route path='/about' element={<About />} />
+               <Route path='/cart' element={<Cart />} />
+            </Routes>
+         {/*<ItemCount initial={0} stock={15} />*/}
+         </div> 
+      </CartProvider>
    );
 }
 

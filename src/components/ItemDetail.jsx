@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useCartContext } from '../context/CartProvider';
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({data}) => {
 
   const [goToCart, setCart] = useState(false);
-  const onAdd = () => {
+  const { addProduct } = useCartContext();
+
+  const onAdd = (quantity) => {
     setCart(true);
+    addProduct(data, quantity);
   }
   return (
     <div className='Item-container'> 
@@ -23,7 +27,7 @@ const ItemDetail = ({data}) => {
             <button className='Checkout-button'>Proceed to checkout</button>
           </Link>
           : <ItemCount initial={0} stock={15} onAdd={onAdd} />
-        }
+        } 
     </div>
  </div> 
   )
