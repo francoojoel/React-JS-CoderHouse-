@@ -173,7 +173,7 @@
 .App-container .Items-title {
     font-size: 2.5rem;
     margin: 1rem;
-    padding-top: 3rem;
+    margin-top: 9%;
 }
 
 .App-container .Item-container .Product-card {
@@ -238,6 +238,7 @@
 }    
 
 .filters .Filters-title {
+    font-size: 1.6rem;
     margin-left: 1rem;
 }
 

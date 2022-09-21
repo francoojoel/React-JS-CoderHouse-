@@ -14,7 +14,7 @@ const footwear = [
    {id: 5, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dwabbcb439/products/NI_CI0919-004/NI_CI0919-004-1.JPG?sw=400&sh=400", 
    category: 'nike', title: "Nike Airforce One Shadow", price: "$290"},
    {id: 6, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dwec28aab0/products/AD_GZ8213/AD_GZ8213-1.JPG?sw=400&sh=400", 
-   category: 'adidas', title: "Adidas Lite Racer ByD 2.0", price: "1$70"},
+   category: 'adidas', title: "Adidas Lite Racer ByD 2.0", price: "$170"},
    {id: 7, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dwce2b59db/products/NI_553558-163/NI_553558-163-1.JPG?sw=400&sh=400",
    category: 'nike', title: "Nike Air Jordan One Low", price: "$280"},
    {id: 8, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw3fe30941/products/NI_DH3162-001/NI_DH3162-001-1.JPG?sw=400&sh=400",
