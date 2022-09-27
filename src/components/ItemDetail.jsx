@@ -17,7 +17,7 @@ const ItemDetail = ({data}) => {
       <div className='Product-card'>
        <img src={data.image} alt={data.title} />
        <h3 className='Item-name'>{data.title}</h3>
-       <p className='Item-price'>{data.price}</p>
+       <p className='Item-price'><span>$</span>{data.price}</p>
        <p className='Item-description'>
           Item description
        </p>

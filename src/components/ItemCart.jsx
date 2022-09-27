@@ -14,7 +14,7 @@ export const ItemCart = ({ product }) => {
       <div className='Cart-content'>
          <p className='Product-info'>{product.title}</p>
          <p className='Product-info'>Quantity: {product.quantity}</p>
-         <p className='Product-info'>{product.price}</p>
+         <p className='Product-info'>${product.price}</p>
          <div className='Delete-container'>
             <button onClick={() => removeProduct(product.id)} className='Delete-button'><AiFillDelete /></button>
          </div>     
