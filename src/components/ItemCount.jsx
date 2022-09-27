@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 const ItemCount = ({initial, stock, onAdd}) => {
-  const [count, setCount] = useState(parseInt(initial));
+  const [count, setCount] = useState(initial);
 
   const increase = () => setCount(count + 1);
   const decrease = () => setCount(count - 1);
   
   useEffect(() => {
-    setCount(parseInt(initial));
+    setCount(initial);
   }, [initial])
       
 
