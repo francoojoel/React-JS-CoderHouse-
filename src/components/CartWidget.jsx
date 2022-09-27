@@ -1,9 +1,9 @@
 import React from 'react';
-import {FaCartPlus} from 'react-icons/fa/';
+import {FaShoppingCart} from 'react-icons/fa/';
 
 const CartWidget = () => {
    return (
-      <FaCartPlus />
+      <FaShoppingCart />
    )
 }
 

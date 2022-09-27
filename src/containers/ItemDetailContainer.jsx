@@ -4,7 +4,7 @@ import ItemDetail from '../components/ItemDetail';
 
 const footwear = [
    {id: 1, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw3e1ce252/products/CO_157196C/CO_157196C-1.JPG?sw=400&sh=400",
-   category: 'converse', title:"Converse Chuck Taylor All Star Core OX", price: "$140"},
+   category: 'converse', title:"Converse Chuck Taylor All Star Core OX", price: "$140",},
    {id: 2, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw41c09c3f/products/CO_157002C/CO_157002C-1.JPG?sw=400&sh=400", 
    category: 'converse', title: "Converse Chuck Taylor All Star Leather", price: "$165"},
    {id: 3, image: "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw42370dbb/products/NI_DO2760-220/NI_DO2760-220-1.JPG?sw=400&sh=400", 
