@@ -1,21 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ItemCount = ({initial, stock, onAdd}) => {
-   const [count, setCounter] = useState(initial);
+  const [count, setCount] = useState(parseInt(initial));
 
-   const sumar = () => setCounter(count + 1);
-   const restar = () => setCounter(count - 1);
-   
+  const increase = () => setCount(count + 1);
+  const decrease = () => setCount(count - 1);
+  
+  useEffect(() => {
+    setCount(parseInt(initial));
+  }, [initial])
+      
+
   return (
     <div className='Count-container'>
-        <button className='Counter-button' disabled={count >= stock} onClick={sumar}>+</button>
+        <button className='Counter-button' disabled={count >= stock} onClick={increase}>+</button>
         <h3 className='Counter'>{count}</h3>
-        <button className='Counter-button' disabled={count <= initial} onClick={restar}>-</button>
+        <button className='Counter-button' disabled={count <= 1} onClick={decrease}>-</button>
         <div className='Add-cart-container'>
-            <button className='Cart-button' disabled={count <= 0} onClick={onAdd}>Add to cart</button>
+            <button className='Cart-button' disabled={stock <= 0} onClick ={() => onAdd(count)}>Add to cart</button>
         </div>
     </div>
   )
 }
 
-export default ItemCount;
+export default ItemCount;                    

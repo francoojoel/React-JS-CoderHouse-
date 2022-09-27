@@ -16,13 +16,13 @@ const Cart = () => {
 	}
    
 	return (
-      
 		<div>
-         console.log(cart);
-		 {cart.map(product =>(
-		 <ItemCart key={product.id} producto={product} />))}
-			<p>Total: {totalPrice()}</p>
+			{cart.map((product) => (
+				<ItemCart key={product.id} product={product} />
+			))}
+			<p>total: {totalPrice()}</p>
 		</div>
+
 	);
 };
 

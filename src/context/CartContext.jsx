@@ -7,7 +7,7 @@ export const useCartContext = () => useContext(CartContext);
 const CartProvider = ({ children }) => {
 	const [cart, setCart] = useState([]);
 
-	const addProduct = (item, quantity) => {
+	/*const addProduct = (item, quantity) => {
 		const newItem = {...item, quantity}
 
 		if(cart.some(product => product.id === newItem.id )) {
@@ -21,7 +21,16 @@ const CartProvider = ({ children }) => {
 		}else {
 			setCart({...cart, newItem});
 		}
-	};
+	};*/
+	const addProduct = (item, quantity) => {
+        if (isInCart(item.id)) {
+            setCart(cart.map(product => {
+                return product.id === item.id ? { ...product, quantity: product.quantity + quantity } : product
+            }));
+        } else {
+            setCart([...cart, {...item, quantity}]);
+        }
+    }
 
 	const totalPrice = () => {
 		return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
