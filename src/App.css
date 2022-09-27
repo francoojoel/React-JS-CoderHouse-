@@ -82,13 +82,13 @@
 .Cart-container{
     display: flex;
     justify-content: flex-end;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: -38px;
     padding-right: 6rem;
     cursor: pointer;
 }
 
-.Greeting-info {
+/*.Greeting-info {
     margin: 0px 7px 10px;
     padding: 3px;
     width: 22px;
@@ -97,7 +97,7 @@
     border-radius: 50%;
     text-align: center;
     font-size: 1rem;
-}
+}*/
 
 .News-container {
     width: 100%;
@@ -107,8 +107,8 @@
 }
 
 .News-container img {
-    width: 100%;
-    max-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .News-container .Centered-title {
@@ -120,12 +120,16 @@
 
 .Centered-title .Sub-title {
     color: #f33f3f;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .Centered-title .Main-title {
     color: #fff;
     font-size: 4rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .App-container .Count-container {
@@ -141,7 +145,7 @@
     background-color: #f33f3f;
     color: #fff;
     font-size: 1rem;
-    padding: 0.2rem 0.3rem;
+    padding: 0.3rem 0.4rem;
     cursor: pointer;
 }
 
@@ -252,5 +256,82 @@
 }
 
 .filters .Brand-filter:hover {
+    color: #f33f3f;
+}
+
+.App-container .Heading-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.Heading-container .Heading-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.Heading-container .Centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.App-container .Cart-info {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.Cart-info .Empty-cart {
+    font-size: 3rem;
+}
+
+.Cart-info .Products-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    transition: all 100ms ease;
+}
+
+.Products-link:hover {
+    color: #f33f3f;
+}
+
+.App-container .Shopping-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}    
+
+.Shopping-container .Image-box {
+    margin-right: 0.8rem;
+}
+
+.Shopping-container .Image-box img {
+    max-width: 230px;
+    height: auto;
+}
+
+.Shopping-container .Cart-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.Shopping-container .Cart-content .Product-info {
+    margin: 1.4rem;
+}
+
+.Cart-content .Delete-container .Delete-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+
+.Delete-container .Delete-button:hover {
     color: #f33f3f;
 }

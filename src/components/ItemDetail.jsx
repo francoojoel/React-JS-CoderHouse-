@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useCartContext } from '../context/CartProvider';
+import { useCartContext } from '../context/CartContext';
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({data}) => {
@@ -8,9 +8,9 @@ const ItemDetail = ({data}) => {
   const [goToCart, setCart] = useState(false);
   const { addProduct } = useCartContext();
 
-  const onAdd = (quantity) => {
+  const onAdd = (quantity, item) => {
     setCart(true);
-    addProduct(data, quantity);
+    addProduct(data, quantity, item);
   }
   return (
     <div className='Item-container'> 
@@ -27,7 +27,7 @@ const ItemDetail = ({data}) => {
             <button className='Checkout-button'>Proceed to checkout</button>
           </Link>
           : <ItemCount initial={0} stock={15} onAdd={onAdd} />
-        } 
+        }
     </div>
  </div> 
   )
