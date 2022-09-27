@@ -9,11 +9,11 @@ export const ItemCart = ({ product }) => {
   return (
    <div className='Shopping-container'>
       <div className='Image-box'>
-         <img src={product.image} alt="Sneaker" />
+         <img src={product.image} alt="Product" />
       </div>
       <div className='Cart-content'>
-         <h3 className='Product-info'>{product.title}</h3>
-         <p className='Product-info'>{product.quantity}</p>
+         <p className='Product-info'>{product.title}</p>
+         <p className='Product-info'>Quantity: {product.quantity}</p>
          <p className='Product-info'>{product.price}</p>
          <div className='Delete-container'>
             <button onClick={() => removeProduct(product.id)} className='Delete-button'><AiFillDelete /></button>

@@ -24,7 +24,7 @@ const ItemDetail = ({data}) => {
         {
           goToCart
           ? <Link className='Checkout-link' to='/cart'>
-            <button className='Checkout-button'>Proceed to checkout</button>
+            <button className='Go-cart'>Go to cart</button>
           </Link>
           : <ItemCount initial={0} stock={15} onAdd={onAdd} />
         }

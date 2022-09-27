@@ -16,13 +16,13 @@ const Cart = () => {
 	}
    
 	return (
-		<div>
-			{cart.map((product) => (
-				<ItemCart key={product.id} product={product} />
-			))}
-			<p>total: {totalPrice()}</p>
-		</div>
-
+      <>
+         {
+            cart.map(product => <ItemCart key={product.id} product={product} />) 
+         }
+         <p className="Total-price">Total: ${totalPrice()}</p>
+		 <button className="Checkout-button">Proceed to checkout</button>
+      </>
 	);
 };
 
