@@ -3,9 +3,11 @@ import about from '../assets/about-heading.jpg';
 
 const About = () => {
    return (
-      <div className='About-container'>
-         <img className='Image-heading' src={about} alt="About Us"/>
-         <div className='Centered-heading'>
+      <div className='Heading-container'>
+         <div className='Heading-image'>
+            <img src={about} alt="About" />
+         </div>   
+         <div className='Centered-title'>
             <h4 className='Sub-title'>About Us</h4>
             <h2 className='Main-title'>Our Company</h2>
          </div>

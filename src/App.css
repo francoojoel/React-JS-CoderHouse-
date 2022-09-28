@@ -26,6 +26,7 @@
 }
 
 .Header-container .Navbar .Logo {
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: #fff;
     font-size: 1.8rem;
@@ -94,33 +95,33 @@
     font-size: 1rem;
 }
 
-.News-container {
+.Heading-container {
     width: 100%;
     position: relative;
     display: inline-block;
     text-align: center;
 }
 
-.News-container img {
+.Heading-container .Image-heading {
     max-width: 100%;
     height: auto;
 }
 
-.News-container .Centered-title {
+.Heading-container .Centered-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.Centered-title .Sub-title {
+.Heading-container .Centered-title .Sub-title {
     color: #f33f3f;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.Centered-title .Main-title {
+.Heading-container .Centered-title .Main-title {
     color: #fff;
     font-size: 4rem;
     letter-spacing: 5px;
@@ -254,25 +255,6 @@
     color: #f33f3f;
 }
 
-.App-container .Heading-container {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-.Heading-container .Heading-image {
-    max-width: 100%;
-    height: auto;
-}
-
-.Heading-container .Centered-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .App-container .Cart-info {
     text-align: center;
     margin-top: 15%;
@@ -346,4 +328,94 @@
     font-size: 1rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
+}
+
+.App-container .Footer-container {
+    background-color: #232323;
+    min-height: 300px;
+    width: 100%;
+    margin-top: 9%;
+}
+
+.Footer-container .Slogan-container {
+    text-align: center;
+    padding-top: 1.3rem;
+}
+
+.Footer-container .Slogan-container .Footer-logo em {
+    color: #f33f3f;
+    font-style: normal;
+}
+
+.Footer-container .Slogan-container .Footer-logo {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.Footer-container .Slogan-container .Slogan {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.Footer-container .Socials {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.Footer-container .Socials .Social-link {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0.6rem;
+    transition: all 200ms ease-out;
+}
+
+.Footer-container .Socials .Social-link:hover {
+    color: #f33f3f;
+}
+
+.Footer-container .Sitemap-container {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.Footer-container .Sitemap-container .Sitemap-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    transition: all 200ms ease;
+}
+
+.Footer-container .Sitemap-container .Sitemap-link:hover {
+    color: #f33f3f;
+}
+
+.Footer-container .Section-divider{
+    margin: 0 auto;
+    border: 1px solid #36454F;
+    width: 45%;
+}
+
+.Footer-container .Copyright-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.Footer-container .Copyright-container .Page-author {
+    color: #fff;
+    font-size: 1rem;   
+    text-transform: uppercase; 
+}
+
+.Footer-container .Copyright-container .Page-copyright {
+    margin-top: 0.6rem;
+    color: #fff;
+    font-size: 0.8rem;
 }
