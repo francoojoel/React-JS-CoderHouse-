@@ -4,7 +4,9 @@ import product from '../assets/product-heading.jpg'
 const Products = () => {
   return (
     <div className='Heading-container'>
-      <img className='Heading-image' src={product} alt="Products" />
+      <div className='Image-heading'>
+        <img src={product} alt="Product" />
+      </div>
       <div className='Centered-title'>
         <h4 className='Sub-title'>New Arrivals</h4>
         <h2 className='Main-title'>Levi Footwear</h2>

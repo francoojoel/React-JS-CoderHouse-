@@ -10,6 +10,7 @@ import Products from './components/Products';
 import Home from './components/Home';
 import Cart from './components/Cart'
 import CartProvider from './context/CartContext';
+import Footer from './components/Footer';
 //import ItemCount from './components/ItemCount';
 
 function App () {
@@ -18,14 +19,15 @@ function App () {
          <div className='App-container'>    
             <Header />
             <Routes>
-               <Route path='*' element={<Home />} />
+               <Route path='/' element={<Home />} />
+               <Route path='/products' element={<Products />} />
                <Route path='/category/:categoryId' element={<ItemListContainer />} />
                <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
-               <Route path='/products' element={<Products />} />
                <Route path='/contact' element={<Contact />} />
                <Route path='/about' element={<About />} />
                <Route path='/cart' element={<Cart />} />
             </Routes>
+            <Footer />
          {/*<ItemCount initial={0} stock={15} />*/}
          </div> 
       </CartProvider>

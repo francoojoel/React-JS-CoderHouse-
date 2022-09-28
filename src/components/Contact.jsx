@@ -3,9 +3,11 @@ import contact from '../assets/contact-heading.jpg';
 
 const Contact = () => {
   return (
-    <div className='Contact-container'>
-      <img src={contact} alt="Contact" />
-      <div className='Centered-heading'>
+    <div className='Heading-container'>
+      <div className='Heading-image'>
+          <img src={contact} alt="Contact" />
+      </div>   
+      <div className='Centered-title'>
           <h4 className='Sub-title'>Contact Us</h4>
           <h2 className='Main-title'>Let’s get in touch</h2>
         </div>
