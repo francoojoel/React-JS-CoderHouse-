@@ -1,5 +1,5 @@
 import React from 'react';
-import Filters from './Filters';
+import Filters from '../Filters/Filters';
 import Item from './Item';
 
 const ItemList = ({data = []}) => {
