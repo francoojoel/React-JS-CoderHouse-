@@ -256,6 +256,7 @@
 }
 
 .App-container .Cart-info {
+    height: 45vh;
     text-align: center;
     margin-top: 15%;
 }
@@ -316,6 +317,7 @@
 
 .Total-price {
     font-size: 1.2rem;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -412,6 +414,7 @@
     color: #fff;
     font-size: 1rem;   
     text-transform: uppercase; 
+    animation: glitch 1s linear infinite;
 }
 
 .Footer-container .Copyright-container .Page-copyright {

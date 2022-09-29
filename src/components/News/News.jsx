@@ -1,5 +1,5 @@
 import React from 'react';
-import news from '../assets/news-heading.jpg';
+import news from '../../assets/news-heading.jpg';
 
 const News = () => {
   return (

@@ -1,16 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
 import './index.css';
 import './App.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import ItemListContainer from './containers/ItemListContainer';
 import ItemDetailContainer from './containers/ItemDetailContainer';
-import Contact from './components/Contact';
-import About from './components/About';
-import Products from './components/Products';
-import Home from './components/Home';
-import Cart from './components/Cart'
+import Contact from './components/Pages/Contact';
+import About from './components/Pages/About';
+import Products from './components/Pages/Products';
+import Home from './components/Pages/Home';
+import Cart from './components/Carts/Cart'
 import CartProvider from './context/CartContext';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 //import ItemCount from './components/ItemCount';
 
 function App () {

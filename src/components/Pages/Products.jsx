@@ -1,5 +1,5 @@
 import React from 'react';
-import product from '../assets/product-heading.jpg'
+import product from '../../assets/product-heading.jpg'
 
 const Products = () => {
   return (

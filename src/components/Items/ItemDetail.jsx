@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useCartContext } from '../context/CartContext';
+import { useCartContext } from '../../context/CartContext';
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({data}) => {
@@ -26,7 +26,7 @@ const ItemDetail = ({data}) => {
           ? <Link className='Checkout-link' to='/cart'>
             <button className='Go-cart'>Go to cart</button>
           </Link>
-          : <ItemCount initial={0} stock={15} onAdd={onAdd} />
+          : <ItemCount initial={1} stock={15} onAdd={onAdd} />
         }
     </div>
  </div> 
