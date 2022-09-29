@@ -13,23 +13,23 @@ const ItemDetail = ({data}) => {
     addProduct(data, quantity, item);
   }
   return (
-    <div className='Item-container'> 
-      <div className='Product-card'>
-       <img src={data.image} alt={data.title} />
-       <h3 className='Item-name'>{data.title}</h3>
-       <p className='Item-price'>${data.price}</p>
-       <p className='Item-description'>
-          Item description
-       </p>
-        {
-          goToCart
+    <div className='Detail-container'> 
+      <div className='Detail-image'>
+        <img src={data.image} alt={data.title} />
+      </div>
+      <div className='Detail-info'>
+        <h3 className='Item-name'>{data.title}</h3>
+        <p className='Item-price'>${data.price}</p>
+        <p className='Item-description'>{data.description}</p>    
+      </div> 
+      {
+        goToCart
           ? <Link className='Checkout-link' to='/cart'>
             <button className='Go-cart'>Go to cart</button>
-          </Link>
+            </Link>
           : <ItemCount initial={1} stock={15} onAdd={onAdd} />
         }
-    </div>
- </div> 
+  </div> 
   )
 }
 
