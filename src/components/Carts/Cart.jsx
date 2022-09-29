@@ -21,7 +21,10 @@ const Cart = () => {
             cart.map(product => <ItemCart key={product.id} product={product} />) 
          }
          <p className="Total-price">Total: ${ totalPrice() }</p>
-		 <button className="Checkout-button">Proceed to checkout</button>
+		 <div className="Check-button-container">
+			<button className="Checkout-button">Proceed to checkout</button>
+		 </div>
+		 
       </>
 	);
 };

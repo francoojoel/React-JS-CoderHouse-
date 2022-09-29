@@ -131,7 +131,7 @@
 .App-container .Count-container {
     display: flex;
     justify-content: flex-start;
-    margin-top: 0.7rem;
+    margin-top: 1.6rem;
     padding-left: 1rem;
 }
 
@@ -179,7 +179,7 @@
 .App-container .Item-container .Product-card {
     margin: 1rem;
     width: 275px;
-    height: 450px;
+    height: 390px;
     min-height: auto;
     min-width: auto;
     cursor: pointer;
@@ -207,7 +207,6 @@
     padding-top: 1rem;
     font-size: 1.1rem;
     font-weight: 300;
-
 }
 
 .App-container .Item-container .Product-card .Item-price {
@@ -216,23 +215,60 @@
     font-size: 1.1rem;
 }
 
-.App-container .Item-container .Product-card .Item-description {
-    padding-left: 10px;
-}
-
-.Item-container .Product-card .Checkout-link {
+.Detail-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    min-width: 400px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}    
+
+.Delete-container .Detail-image {
+    width: 25%;
+    height: 230px;
+}
+
+.Detail-container .Detail-image img {
+    min-width: 100px;
+}
+
+.Detail-container .Detail-info {
+    max-width: 700px;
+    margin-top: -15px;
+}
+
+.Detail-container .Detail-info .Item-name {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.Detail-container .Detail-info .Item-price {
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.Detail-container .Detail-info .Item-description {
+    font-size: 1.1rem;
+}
+
+.Detail-container .Checkout-link {
     padding: 0.7rem 0.8rem;
     text-decoration: none;
 }
 
-.Item-container .Product-card .Go-cart {
+.Detail-container .Go-cart {
     border: none;
     border-radius: 16px;
     background-color: #f33f3f;
     color: #fff;
     font-size: 1rem;
+    margin-top: 1rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
 }    
@@ -321,7 +357,12 @@
     text-align: center;
 }
 
-.Checkout-button {
+.Check-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Check-button-container .Checkout-button {
     margin-top: 1.3rem;
     border: none;
     border-radius: 16px;
