@@ -9,7 +9,7 @@ export const ItemCart = ({ product }) => {
   return (
    <div className='Shopping-container'>
       <div className='Image-box'>
-         <img src={product.image} alt="Product" />
+         <img src={product.image} alt={product.title} />
       </div>
       <div className='Cart-content'>
          <p className='Product-info'>{product.title}</p>
