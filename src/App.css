@@ -373,6 +373,17 @@
     cursor: pointer;
 }
 
+.App-container .Checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.Checkout-container .Order-message {
+    font-size: 2.3rem;
+}
+
 .App-container .Footer-container {
     background-color: #232323;
     min-height: 300px;

@@ -10,6 +10,7 @@ import Products from './components/Pages/Products';
 import Home from './components/Pages/Home';
 import Cart from './components/Carts/Cart'
 import CartProvider from './context/CartContext';
+import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
 //import ItemCount from './components/ItemCount';
 
@@ -26,6 +27,7 @@ function App () {
                <Route path='/contact' element={<Contact />} />
                <Route path='/about' element={<About />} />
                <Route path='/cart' element={<Cart />} />
+               <Route path='/checkout' element={<Checkout />} />
             </Routes>
             <Footer />
          {/*<ItemCount initial={0} stock={15} />*/}

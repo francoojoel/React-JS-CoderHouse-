@@ -4,7 +4,7 @@ import { useCartContext } from "../../context/CartContext";
 import ItemCart from "./ItemCart";
 
 const Cart = () => {
-	const { cart, totalPrice } = useCartContext();
+	const { cart, totalPrice, } = useCartContext();
 
 	if (cart.length === 0) {
 		return (
@@ -22,7 +22,9 @@ const Cart = () => {
          }
          <p className="Total-price">Total: ${ totalPrice() }</p>
 		 <div className="Check-button-container">
-			<button className="Checkout-button">Proceed to checkout</button>
+			<Link to='/checkout'>
+				<button className="Checkout-button">Proceed to checkout</button>
+			</Link>	
 		 </div>
 		 
       </>
