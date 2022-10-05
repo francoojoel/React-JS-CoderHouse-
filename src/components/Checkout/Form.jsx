@@ -8,13 +8,13 @@ const Form = ({ handleId }) => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
-    const { cart, totalPrice, clear } = useCartContext();
+    const { cart, totalPrice, clearCart } = useCartContext();
     const total = totalPrice();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const order = {
-            buyer: { name, phone },
+            buyer: { name, phone, email },
             date: serverTimestamp(),
             cart,
             total,
@@ -57,11 +57,9 @@ const Form = ({ handleId }) => {
                   value={phone}
                   onChange={phoneHandle}
                />
-
-            <button className='Send-button' onClick={() => {clear()}}>Send</button>
-        </form>
+            <button className='Send-button' onClick={() => {clearCart()}}>Send</button>
+        </form>      
       </div>
-
     );
 };
 
