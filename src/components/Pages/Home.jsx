@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import ItemListContainer from '../../containers/ItemListContainer';
+import ItemListContainer from '../../Containers/ItemListContainer';
 import News from '../News/News';
 
 const Home = () => {

@@ -1,4 +1,3 @@
-
 import React, {useEffect, useState} from 'react';
 import ItemList from '../components/Items/ItemList';
 import { useParams } from 'react-router-dom';
@@ -15,11 +14,8 @@ export const ItemListContainer = () => {
           ? query(itemColecction, where('category', '==', categoryId))
           : itemColecction;
 
-      getDocs(ref).then((response) => {
-          console.log(response.docs);
-          
+      getDocs(ref).then((response) => {      
           const footwear = response.docs.map((prod) => {
-              console.log(prod);
               return {
                   id: prod.id,
                   ...prod.data(),
@@ -38,15 +34,3 @@ export const ItemListContainer = () => {
 }
 
 export default ItemListContainer;
-
-
-   /*const getData = new Promise(resolve => {
-      setTimeout(() => {
-         resolve(footwear);
-      }, 1000);
-     });
-     if(categoryId) {
-         getData.then(res => setData(res.filter(footwear => footwear.category === categoryId)));
-     }else {
-         getData.then(res => setData(res));
-     }*/
