@@ -304,11 +304,6 @@
 .Cart-info .Products-link {
     text-decoration: none;
     font-size: 2rem;
-    color: #000;
-    transition: all 100ms ease;
-}
-
-.Products-link:hover {
     color: #f33f3f;
 }
 

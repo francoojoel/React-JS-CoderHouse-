@@ -28,11 +28,3 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer;
-
-   /*const getData = new Promise(resolve => {
-      setTimeout(() => {
-         resolve(footwear);
-      }, 1000);
-      });
-      getData.then(res => setData(res.find(footwear => footwear.id === parseInt(detailId))));
-      */
