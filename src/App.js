@@ -2,14 +2,14 @@ import { Routes, Route } from 'react-router-dom';
 import './index.css';
 import './App.css';
 import Header from './components/Header/Header';
-import ItemListContainer from './Containers/ItemListContainer';
-import ItemDetailContainer from './Containers/ItemDetailContainer';
+import ItemListContainer from './containers/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer';
 import Contact from './components/Pages/Contact';
 import About from './components/Pages/About';
 import Products from './components/Pages/Products';
 import Home from './components/Pages/Home';
 import Cart from './components/Carts/Cart'
-import CartProvider from './Context/CartContext';
+import CartProvider from './context/CartContext';
 import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
 

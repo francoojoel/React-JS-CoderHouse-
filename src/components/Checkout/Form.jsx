@@ -1,7 +1,7 @@
 import React from 'react';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebaseConfig';
-import { useCartContext } from '../../Context/CartContext';
+import { useCartContext } from '../../context/CartContext';
 import { useState } from 'react';
 
 const Form = ({ handleId }) => {
