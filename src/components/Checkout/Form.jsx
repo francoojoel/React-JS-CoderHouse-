@@ -32,30 +32,35 @@ const Form = ({ handleId }) => {
     return (
         <div className='Checkout-Form'>
             <form action="" onSubmit={handleSubmit}>
+                
                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full name"
-                  value={name}
-                  onChange={nameHandle}
-                  required
+                    type="text"
+                    name="name"
+                    placeholder="Full name"
+                    value={name}
+                    onChange={nameHandle}
+                    autoComplete= 'off'        
+                    required
                />
 
                <input 
-                  type="text" 
-                  name="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={emailHandle}
-                  required
+                    type="text" 
+                    name="email"
+                    placeholder="E-mail Address"
+                    value={email}
+                    onChange={emailHandle}
+                    autoComplete= 'off'       
+                    required
                />
 
                <input
-                  type="number"
-                  name="phone"
-                  placeholder="Phone number"
-                  value={phone}
-                  onChange={phoneHandle}
+                    type="number"
+                    name="phone"
+                    placeholder="Phone number"
+                    value={phone}
+                    onChange={phoneHandle}
+                    autoComplete= 'off'
+                    required
                />
             <button className='Send-button' onClick={() => {clearCart()}}>Send</button>
         </form>      

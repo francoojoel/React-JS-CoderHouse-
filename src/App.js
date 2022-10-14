@@ -12,7 +12,6 @@ import Cart from './components/Carts/Cart'
 import CartProvider from './Context/CartContext';
 import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
-//import ItemCount from './components/ItemCount';
 
 function App () {
    return (
@@ -30,7 +29,6 @@ function App () {
                <Route path='/checkout' element={<Checkout />} />
             </Routes>
             <Footer />
-         {/*<ItemCount initial={0} stock={15} />*/}
          </div> 
       </CartProvider>
    );

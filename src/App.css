@@ -145,6 +145,10 @@
     cursor: pointer;
 }
 
+.App-container .Count-container .Counter-button:disabled {
+    cursor: no-drop;
+}
+
 .App-container .Count-container .Add-cart-container {
     margin-left: 1rem;
 }
@@ -377,7 +381,128 @@
 }
 
 .Checkout-container .Order-message {
-    font-size: 2.3rem;
+    font-size: 2rem;
+}
+
+.Checkout-container .Checkout-title {
+    margin-bottom: -65px;
+}
+
+.Checkout-container .Hover-link .Hover-button {
+    margin-top: 2rem;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.Checkout-container .Hover-link .Hover-button span {
+    width: 140px;
+    height: 55px;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0.6rem 0;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+  
+.Checkout-container .Hover-link .Hover-button span:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+  
+.Checkout-container .Hover-link .Hover-button span:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.Checkout-container .Hover-link .Hover-button span:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+  
+.Checkout-container .Hover-link .Hover-button span:hover:before {
+    border-color: #000;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+  
+.Checkout-container .Hover-link .Hover-button span:hover:after {
+    border-color: #000;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+  
+.Checkout-Form {
+    height: 300px;
+    width: 300px;
+}
+
+.Checkout-Form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem; 
+}    
+
+.Checkout-Form form input {
+    background-color: #cbcbcb;
+    height: 35px;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    outline: none;
+    margin: 0.8rem;
+    padding: 0.4rem;  
+}
+
+.Checkout-Form form input:focus {
+    background-color: #232323;
+    color: #fff;
+}
+
+.Checkout-Form form input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.Checkout-Form .Send-button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 16px;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
 }
 
 .App-container .Footer-container {
