@@ -15,10 +15,10 @@ export const Footer = () => {
                <h4 className='Slogan'>Quality and confort</h4>
             </div>
             <div className='Socials'>
-               <a href='#' className= 'Social-link'><AiOutlineInstagram /></a>
-               <a href='#' className= 'Social-link'><AiOutlineFacebook /></a>
-               <a href='#' className= 'Social-link'><AiOutlineTwitter /></a>
-               <a href='#' className= 'Social-link'><AiOutlineWhatsApp /></a>   
+               <a href='https://www.instagram.com/' target='blank' className= 'Social-link'><AiOutlineInstagram /></a>
+               <a href='https://es-la.facebook.com/' target='blank' className= 'Social-link'><AiOutlineFacebook /></a>
+               <a href='https://twitter.com/' target='blank' className= 'Social-link'><AiOutlineTwitter /></a>
+               <a href='https://www.whatsapp.com/?lang=en' target='blank' className= 'Social-link'><AiOutlineWhatsApp /></a> 
             </div>
          </section>
          <section className='Sitemap-container'>
