@@ -1,6 +1,6 @@
 import React from 'react';
-import { useCartContext } from '../../Context/CartContext';
-import {AiFillDelete} from 'react-icons/ai/';
+import { useCartContext } from '../../context/CartContext';
+import { AiFillDelete } from 'react-icons/ai/';
 
 export const ItemCart = ({ product }) => {
 

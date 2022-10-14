@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import ItemListContainer from '../../Containers/ItemListContainer';
+import ItemListContainer from '../../containers/ItemListContainer';
 import News from '../News/News';
 
 const Home = () => {
@@ -10,7 +10,6 @@ const Home = () => {
       <Routes>
          <Route path='/' element={<ItemListContainer />} />
       </Routes>
-
     </div>
   )
 }

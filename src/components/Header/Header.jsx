@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom";
 import CartWidget from "../Carts/CartWidget";
-//import { ItemListContainer } from "../containers/ItemListContainer";
 
 const Header = () => {
    return (
@@ -29,9 +28,6 @@ const Header = () => {
            <Link className="Cart-link" to='/cart'>
                <CartWidget />
            </Link> 
-            {/*<div className="Greeting-info">
-               <ItemListContainer greeting="0"/>
-            </div>*/}
          </div>
       </div>
    )

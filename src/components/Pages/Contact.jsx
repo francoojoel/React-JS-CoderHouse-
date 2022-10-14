@@ -12,8 +12,6 @@ const Contact = () => {
           <h2 className='Main-title'>Let’s get in touch</h2>
         </div>
     </div>
-
-
   )
 }
 

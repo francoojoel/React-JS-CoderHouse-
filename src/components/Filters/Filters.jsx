@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
 const Filters = (categoryId) => {
   return (
    <div key={categoryId} className='filters'>
