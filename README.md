@@ -1,77 +1,21 @@
-# Explicacion de mi app
-Mi proyecto es un e-commerce simple y minimalista. Con 4 paginas navegables.
-En el home tengo el catalogo de productos con su card y sus detalles correspondientes, al dar clic en cualquier card,
-te lleva a los detalles del productos con la opcion de anadir al carrito con el counter.
-Voy a agregar un catalogo de productos mas amplio a la pagina de "Our Products".
+# Coder House React JS | Comision 37545
+## Proyecto final E-commerce
 
+- HTML | CSS | React JS | [WebDeploy](https://levifootwear.netlify.app)
 
-# Getting Started with Create React App
+Acerca de mi proyecto, es un E-commerce de calzado simple y minimalista con 4 paginas navegables, 3 de ellas no tienen contenido.
+Excluyendo al HOME, donde se encuentra  el catalogo de productos, opte por utilizar 3 marcas, Nike, Converse y Adidas. Cada una de ellas
+tienen su filtro por categoria, como tambien el detalle de cada producto, con la opcion de agregar al carrito. La compra del producto se ejecuta
+con 3 datos que se le solicitan al usuario, una vez hecha la compra, el usuario recibe un ID de compra unico. En el Navbar se encuentran las 4
+paginas, todas ellas con rutas navegables, y tambien el carrito.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Librerias utilizadas
 
-## Available Scripts
+- [React Router Dom](https://reactrouter.com/en/main)
+Libreria utilizada para las rutas del sitio web
 
-In the project directory, you can run:
+- [Firebase](https://firebase.google.com/?hl=es)
+Utilizada para la base de datos del sitio web, donde se guarda el catalogo de productos y todas las ordenes de compra generadas por el usuario.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [react-icons](https://react-icons.github.io/react-icons)
+Todos los iconos utlizados pertenecen a esta libreria.
