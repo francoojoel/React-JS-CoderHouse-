@@ -12,10 +12,13 @@ paginas, todas ellas con rutas navegables, y tambien el carrito.
 ### Librerias utilizadas
 
 - [React Router Dom](https://reactrouter.com/en/main)
-Libreria utilizada para las rutas del sitio web
+
+* Libreria utilizada para las rutas del sitio web
 
 - [Firebase](https://firebase.google.com/?hl=es)
-Utilizada para la base de datos del sitio web, donde se guarda el catalogo de productos y todas las ordenes de compra generadas por el usuario.
 
-- [react-icons](https://react-icons.github.io/react-icons)
-Todos los iconos utlizados pertenecen a esta libreria.
+* Utilizada para la base de datos del sitio web, donde se guarda el catalogo de productos y todas las ordenes de compra generadas por el usuario.
+
+- [React-Icons](https://react-icons.github.io/react-icons)
+
+* Todos los iconos utlizados pertenecen a esta libreria.
